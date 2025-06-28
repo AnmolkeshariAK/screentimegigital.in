@@ -407,6 +407,7 @@ body {
             width: 12px;
             height: 12px;
         }
+
     .section-title h1 {
         font-size: 57px;
         font-weight: 300;
@@ -424,7 +425,7 @@ body {
         color: var(--primary-color);
         margin-bottom: 0;
         cursor: none;
-        text-transform:none;
+        text-transform: none;
     }
 
         .section-title h1 span,
@@ -1245,22 +1246,22 @@ body:has(.offcanvas) {
     padding: 160px 0 80px;
 }
 
-.why-choose-us::before {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -20px;
-    bottom: 80px;
-    background: url(../images/section-bg-shape-1.png) no-repeat;
-    background-position: right bottom;
-    background-size: cover;
-    width: 250px;
-    height: 250px;
-    opacity: 50%;
-    animation: circlerotate 10s infinite linear;
-    animation-direction: alternate;
-    z-index: -1;
-}
+    .why-choose-us::before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -20px;
+        bottom: 80px;
+        background: url(../images/section-bg-shape-1.png) no-repeat;
+        background-position: right bottom;
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        opacity: 50%;
+        animation: circlerotate 10s infinite linear;
+        animation-direction: alternate;
+        z-index: -1;
+    }
 
 @keyframes circlerotate {
     from {
@@ -1276,7 +1277,7 @@ body:has(.offcanvas) {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .about-us-images {
@@ -1318,7 +1319,7 @@ body:has(.offcanvas) {
     }
 
 .about-us-content {
-    width:100%;
+    width: 100%;
 }
 
 .about-us-body {
@@ -1487,12 +1488,14 @@ body:has(.offcanvas) {
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
 .service-item {
     display: flex;
     width: calc(100% - 38px);
-    padding:30px;
+    padding: 30px;
 }
 
     .service-item .icon-box {
@@ -1758,7 +1761,7 @@ body:has(.offcanvas) {
 }
 
 .why-choose-img img {
-    width: 70% ;
+    width: 70%;
     object-fit: contain;
     aspect-ratio: 1 / 1.08;
 }
@@ -1814,6 +1817,7 @@ body:has(.offcanvas) {
     .why-choose-body-item p {
         margin: 0 0 17px 30px;
     }
+
 .why-choose-list {
     border-top: 1px solid var(--divider-color);
     margin-top: 40px;
@@ -2242,18 +2246,18 @@ body:has(.offcanvas) {
     width: 100%;
     text-align: center;
 }
- 
 
-    .brands-circle-image a {
-        display: inline-block;
+
+.brands-circle-image a {
+    display: inline-block;
+}
+
+    .brands-circle-image a img {
+        width: 100%;
+        max-width: 160px;
+        animation: infiniterotate 30s infinite linear;
+        margin-top: 40px;
     }
-
-        .brands-circle-image a img {
-            width: 100%;
-            max-width: 160px;
-            animation: infiniterotate 30s infinite linear;
-            margin-top: 40px;
-        }
 
 /************************************/
 /***      13. Our Facts css       ***/
@@ -6206,6 +6210,7 @@ body:has(.offcanvas) {
 
 @media only screen and (max-width: 991px) {
 
+
     .navbar {
         padding: 20px 0;
     }
@@ -6234,11 +6239,12 @@ body:has(.offcanvas) {
 
         .section-title h3 {
             margin-bottom: 15px;
+            font-size: 10px;
         }
 
             .section-title h3::before {
-                width: 14px;
-                height: 14px;
+                width: 11px;
+                height: 11px;
             }
 
         .section-title h1 {
@@ -6284,7 +6290,7 @@ body:has(.offcanvas) {
         }
 
         .hero.hero-slider-layout .hero-slide {
-            padding: 200px 0 100px;
+            padding: 110px 0 50px;
         }
 
     .hero-content {
@@ -6331,7 +6337,7 @@ body:has(.offcanvas) {
     }
 
     .scrolling-content span {
-        font-size: 34px;
+        font-size: 26px;
     }
 
     .about-us {
@@ -7668,6 +7674,58 @@ body:has(.offcanvas) {
 }
 
 @media only screen and (max-width: 767px) {
+    .hero.hero-slider-layout .hero-slide {
+        padding: 110px 0 0;
+    }
+
+    .btn-default {
+        font-size: 12px;
+        padding: 12px;
+        margin: 10px
+    }
+
+        .btn-default::before {
+            width: 30px;
+            height: 30px;
+            transform: translate(30px, 5px)
+        }
+    .fact-counter-list {
+        gap: 30px 50px;
+        padding-top: 20px;
+        margin-top: 0px;
+    }
+    .fact-counter-item p {
+        margin: 0;
+        font-size: 15px;
+    }
+    .our-services {
+        padding: 18px 0;
+    }
+
+    .section-title {
+        margin-bottom: 10px;
+    }
+
+        .section-title p {
+            margin-top: 6px;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
     body {
         background-size: 200% auto;
@@ -7678,7 +7736,7 @@ body:has(.offcanvas) {
     }
 
     .section-title h2 {
-        font-size: 30px;
+        font-size: 16px;
     }
 
     .hero-content-body {
@@ -7763,7 +7821,7 @@ body:has(.offcanvas) {
     }
 
     .our-scrolling-ticker {
-        padding: 18px 0;
+        padding: 14px 0;
     }
 
     .scrolling-ticker-box {
@@ -7771,12 +7829,12 @@ body:has(.offcanvas) {
     }
 
     .scrolling-content span {
-        font-size: 28px;
+        font-size: 17px;
     }
 
         .scrolling-content span img {
-            max-width: 20px;
-            margin-right: 20px;
+            max-width: 10px;
+            margin-right: 10px;
         }
 
     .about-us-images {
@@ -7841,7 +7899,8 @@ body:has(.offcanvas) {
     }
 
     .service-item {
-        width: calc(100% - 24px);
+        width: 100%;
+        padding: 14px 1px;
     }
 
         .service-item .icon-box {
