@@ -386,7 +386,7 @@ body {
     .section-title h3 {
         display: inline-block;
         position: relative;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -409,7 +409,7 @@ body {
         }
 
     .section-title h1 {
-        font-size: 57px;
+        font-size: 40px;
         font-weight: 300;
         line-height: 1.2em;
         /*text-transform: uppercase;*/
@@ -968,7 +968,7 @@ body:has(.offcanvas) {
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            padding: 235px 0 140px;
+            padding: 205px 0 100px;
         }
 
             .hero.hero-slider-layout .hero-slide.slide-2 {
@@ -1285,7 +1285,7 @@ body:has(.offcanvas) {
     background: url(../images/about-us-bg-shape.svg) no-repeat;
     background-position: bottom 45px left 45px;
     background-size: auto;
-    width: calc(40% - 20px);
+    width: calc(56% - 20px);
     padding-bottom: 150px;
 }
 
@@ -1304,18 +1304,18 @@ body:has(.offcanvas) {
 }
 
 .about-image-1 img {
-    aspect-ratio: 1 / 1.161;
+    aspect-ratio: 1 / 2.161;
 }
-
 .about-image-2 {
     position: absolute;
     bottom: 0;
-    right: -130px;
-    max-width: 403px;
+    right: -145px;
+    max-width: 192px;
+    top: 177px;
 }
 
     .about-image-2 img {
-        aspect-ratio: 1 / 1.023;
+        aspect-ratio: 1 / 1.823;
     }
 
 .about-us-content {
@@ -1494,8 +1494,8 @@ body:has(.offcanvas) {
 
 .service-item {
     display: flex;
-    width: calc(100% - 38px);
-    padding: 30px;
+    width: 100%;
+    padding: 20px 0;
 }
 
     .service-item .icon-box {
@@ -1549,17 +1549,18 @@ body:has(.offcanvas) {
 }
 
     .service-list-content h3 {
-        font-size: 22px;
+        font-size: 17px;
         text-transform: capitalize;
         margin-bottom: 10px;
     }
 
     .service-list-content p {
         margin: 0;
+        font-size: 13px;
     }
 
 .service-readmore-btn {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
     .service-readmore-btn a {
@@ -1933,7 +1934,7 @@ body:has(.offcanvas) {
 
 .feature-list {
     display: flex;
-    gap: 30px 100px;
+    gap: 15px 60px;
     flex-wrap: wrap;
 }
 
@@ -1941,7 +1942,7 @@ body:has(.offcanvas) {
     position: relative;
     width: calc(33.33% - 66.67px);
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
     .feature-list-item::before {
@@ -1975,13 +1976,14 @@ body:has(.offcanvas) {
     }
 
 .feature-item-content h3 {
-    font-size: 22px;
+    font-size: 18px;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
 
 .feature-item-content p {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
 }
 
 .feature-content-footer {
@@ -2069,11 +2071,11 @@ body:has(.offcanvas) {
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-    padding: 40px;
+    padding: 20px;
 }
 
 .project-item-content {
-    width: calc(100% - 90px);
+    width:100%;
 }
 
     .project-item-content p {
@@ -2083,7 +2085,7 @@ body:has(.offcanvas) {
     }
 
     .project-item-content h3 {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
     }
 
@@ -2094,13 +2096,14 @@ body:has(.offcanvas) {
         }
 
 .project-btn {
-    margin-left: 30px;
+    margin-left: 0;
+    margin-top: 10px;
 }
 
     .project-btn a {
         position: relative;
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         border-radius: 100%;
         display: flex;
         justify-content: center;
@@ -2142,7 +2145,7 @@ body:has(.offcanvas) {
 
         .project-btn a img {
             position: relative;
-            max-width: 18px;
+            max-width: 11px;
             transition: all 0.4s ease-in-out;
             z-index: 1;
         }
@@ -2412,6 +2415,7 @@ body:has(.offcanvas) {
 .fact-counter-list {
     border-top: 1px solid var(--divider-color);
     display: flex;
+    justify-content:space-between;
     gap: 30px 90px;
     flex-wrap: wrap;
     padding-top: 30px;
@@ -2448,6 +2452,7 @@ body:has(.offcanvas) {
     .fact-counter-item p {
         margin: 0;
         font-size: 18px;
+        text-wrap:nowrap;
     }
 
 /************************************/
@@ -6208,7 +6213,60 @@ body:has(.offcanvas) {
 /***      35. Responsive css      ***/
 /************************************/
 
+@media only screen and (min-width: 991px) {
+    .fact-counter-item p{
+        font-size:15px
+    }
+
+}
+
+
+@media only screen and (max-width: 1240px) {
+
+    .vision-mission-title h3 {
+        font-size: 15px;
+    }
+    .vision-mission-content p {
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width: 991px) {
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .hero-review-box h2 {
+        justify-content: center;
+    }
+
+    .d-flex.flex-wrap.gap-4 {
+        justify-content: center
+    }
+
+    .service-item {
+        padding: 10px 8px;
+        margin-block: 8px;
+    }
+
+    .service-list-content p {
+        font-size: 12px;
+    }
+
+    .project-item-content h3 a {
+        font-size: 15px;
+    }
+
+    .feature-list-item .icon-box img {
+        max-width: 25px;
+    }
+
+    .feature-list-item {
+        gap: 15px
+    }
+
+
 
 
     .navbar {
@@ -6239,7 +6297,7 @@ body:has(.offcanvas) {
 
         .section-title h3 {
             margin-bottom: 15px;
-            font-size: 10px;
+            font-size: 14px;
         }
 
             .section-title h3::before {
@@ -6252,11 +6310,12 @@ body:has(.offcanvas) {
         }
 
         .section-title h2 {
-            font-size: 40px;
+            font-size: 25px;
         }
 
         .section-title p {
             margin-top: 15px;
+            margin-bottom: 30px;
         }
 
     .section-content-btn .section-title-content {
@@ -6268,8 +6327,8 @@ body:has(.offcanvas) {
     }
 
     .section-btn {
-        text-align: left;
-        margin-top: 15px;
+        text-align: center;
+        margin-block: 5px;
     }
 
     .readmore-btn a {
@@ -6283,6 +6342,7 @@ body:has(.offcanvas) {
 
     .hero {
         padding: 150px 0 50px;
+        text-align: center
     }
 
         .hero.bg-image {
@@ -6405,7 +6465,7 @@ body:has(.offcanvas) {
     }
 
     .our-services {
-        padding: 40px 0;
+        padding: 30px 0;
     }
 
     .our-services-content {
@@ -6419,20 +6479,21 @@ body:has(.offcanvas) {
     }
 
     .service-item .icon-box {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 45px;
+        margin-right: 13px;
     }
 
         .service-item .icon-box img {
-            max-width: 25px;
+            max-width: 20px;
         }
 
     .service-list-content {
-        width: calc(100% - 70px);
+        width: 100%;
     }
 
         .service-list-content h3 {
-            font-size: 20px;
+            font-size: 15px;
         }
 
     .what-we-do {
@@ -6561,7 +6622,7 @@ body:has(.offcanvas) {
         }
 
     .our-feature-box {
-        padding: 50px 50px 0px 50px;
+        padding: 30px 30px 0px 30px;
     }
 
     .feature-title-box .section-title,
@@ -6582,8 +6643,12 @@ body:has(.offcanvas) {
         }
 
     .feature-item-content h3 {
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 10px;
+    }
+
+    .feature-item-content p {
+        font-size: 13px;
     }
 
     .feature-content-footer {
@@ -6599,7 +6664,7 @@ body:has(.offcanvas) {
     }
 
     .project-image img {
-        aspect-ratio: 1 / 0.71;
+        aspect-ratio: 1 / 0.3571;
     }
 
     .project-item-body {
@@ -6769,7 +6834,8 @@ body:has(.offcanvas) {
     }
 
     .our-testimonials {
-        padding: 40px 0;
+        padding: 10px 0;
+        text-align: center;
     }
 
     .testimonial-content,
@@ -6816,8 +6882,8 @@ body:has(.offcanvas) {
 
     .archievement-images {
         width: 100%;
-        max-width: 80%;
-        margin: 0 auto 30px;
+        max-width: 65%;
+        margin: 0 auto 0;
     }
 
     .archievement-asterisk-image img {
@@ -7674,8 +7740,37 @@ body:has(.offcanvas) {
 }
 
 @media only screen and (max-width: 767px) {
+    
+    .our-testimonials { 
+        text-align: center;
+    }
+    .our-feature {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .section-title h3 {
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    .our-blog {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .what-we-do {
+        padding: 11px 0;
+        text-align: center
+    }
+
+    .vision-mission-content p {
+        font-size: 15px;
+    }
+
     .hero.hero-slider-layout .hero-slide {
         padding: 110px 0 0;
+    }
+
+    .feature-list-item .icon-box img {
+        max-width: 24px;
     }
 
     .btn-default {
@@ -7684,22 +7779,35 @@ body:has(.offcanvas) {
         margin: 10px
     }
 
-        .btn-default::before {
-            width: 30px;
-            height: 30px;
-            transform: translate(30px, 5px)
-        }
+    .feature-list-item {
+        gap: 14px;
+    }
+
+    .feature-item-content p {
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+
+    .btn-default::before {
+        width: 30px;
+        height: 30px;
+        transform: translate(30px, 5px)
+    }
+
     .fact-counter-list {
         gap: 30px 50px;
         padding-top: 20px;
         margin-top: 0px;
     }
+
     .fact-counter-item p {
         margin: 0;
         font-size: 15px;
     }
+
     .our-services {
         padding: 18px 0;
+        text-align: center;
     }
 
     .section-title {
@@ -8028,7 +8136,7 @@ body:has(.offcanvas) {
         }
 
     .feature-item-content h3 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -8200,7 +8308,7 @@ body:has(.offcanvas) {
     }
 
         .post-featured-image img {
-            aspect-ratio: 1 / 0.7;
+            aspect-ratio: 1 / 0.57;
         }
 
     .post-item-content h2 {
@@ -8311,7 +8419,7 @@ body:has(.offcanvas) {
     }
 
         .vision-mission-image img {
-            aspect-ratio: 1 / 0.95;
+            aspect-ratio: 1 / 0.595;
         }
 
     .vision-mission-header {
