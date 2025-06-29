@@ -419,8 +419,8 @@ body {
     }
 
     .section-title h2 {
-        font-size: 25px;
-        font-weight: 400;
+        font-size: 19px;
+        font-weight: 500;
         line-height: 1.25em;
         color: var(--primary-color);
         margin-bottom: 0;
@@ -1323,7 +1323,7 @@ body:has(.offcanvas) {
 }
 
 .about-us-body {
-    padding: 30px 30px 0 0;
+    padding: 30px 0 30px 0;
 }
 
 .about-body-content {
@@ -1332,7 +1332,7 @@ body:has(.offcanvas) {
 
     .about-body-content p {
         margin: 0;
-        font-size: 19px;
+        font-size: 15px;
     }
 
 .about-us-list {
@@ -3491,7 +3491,7 @@ body:has(.offcanvas) {
         }
 
 .our-approach {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .our-approch-image {
@@ -3895,7 +3895,7 @@ body:has(.offcanvas) {
 
 .our-team {
     position: relative;
-    padding: 80px 0 50px;
+    padding: 20px 0 50px;
 }
 
 .team-item {
@@ -5280,7 +5280,7 @@ body:has(.offcanvas) {
 }
 
     .team-single-content h2 {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -5292,7 +5292,7 @@ body:has(.offcanvas) {
 
     .team-single-content p {
         margin-bottom: 10px;
-        font-size: 22px;
+        font-size: 19px;
     }
 
         .team-single-content p:last-child {
@@ -6227,7 +6227,10 @@ body:has(.offcanvas) {
         font-size: 15px;
     }
     .vision-mission-content p {
-        font-size: 14px;
+        font-size: 17px;
+    }
+    .footer-work-together h2 {
+        font-size: 148px;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -6242,6 +6245,8 @@ body:has(.offcanvas) {
     }
 
     .d-flex.flex-wrap.gap-4 {
+        padding:10px 0;
+        margin:10px 0;
         justify-content: center
     }
 
@@ -7039,7 +7044,8 @@ body:has(.offcanvas) {
     }
 
     .our-approach {
-        padding: 40px 0;
+        padding: 0;
+        text-align: center;
     }
 
     .our-approch-image figure,
@@ -7141,6 +7147,7 @@ body:has(.offcanvas) {
 
     .our-team {
         padding: 40px 0 10px;
+        text-align:center
     }
 
     .team-image {
@@ -7466,6 +7473,7 @@ body:has(.offcanvas) {
 
     .page-team-single {
         padding: 80px 0 40px;
+        text-align: center;
     }
 
         .page-team-single::before {
@@ -7488,7 +7496,7 @@ body:has(.offcanvas) {
     }
 
     .team-single-content h2 {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .team-contact-box {
@@ -7740,7 +7748,10 @@ body:has(.offcanvas) {
 }
 
 @media only screen and (max-width: 767px) {
-    
+
+    .page-header {
+        padding: 130px 0 56px;
+    }
     .our-testimonials { 
         text-align: center;
     }
@@ -7766,7 +7777,7 @@ body:has(.offcanvas) {
     }
 
     .hero.hero-slider-layout .hero-slide {
-        padding: 110px 0 0;
+        padding: 150px 0 0;
     }
 
     .feature-list-item .icon-box img {
@@ -7840,11 +7851,12 @@ body:has(.offcanvas) {
     }
 
     .section-title h1 {
-        font-size: 30px;
+        font-size: 35px;
+        padding:20px 0
     }
 
     .section-title h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero-content-body {
@@ -7878,6 +7890,7 @@ body:has(.offcanvas) {
 
         .hero-review-box p {
             font-size: 18px;
+            padding:0px 0 10px 0
         }
 
     .hero-get-started-content {
@@ -8399,7 +8412,10 @@ body:has(.offcanvas) {
     }
 
     .page-header-box h1 {
-        font-size: 30px;
+        font-size: 20px;
+    }
+    .page-header-box .para{
+        font-size: 13px;
     }
 
     .page-header-box ol li.breadcrumb-item {
@@ -8743,10 +8759,11 @@ body:has(.offcanvas) {
 
     .team-single-content p {
         margin-bottom: 15px;
+        font-size: 13px;
     }
 
     .team-single-content h2 {
-        font-size: 30px;
+        font-size: 17px;
     }
 
     .team-contact-box {
@@ -8902,6 +8919,21 @@ body:has(.offcanvas) {
         height: 350px;
         border-radius: 20px;
     }
+
+    .page-team-single {
+        padding: 30px 0 0px;
+    }
+    .about-us {
+        padding: 6px 0px;
+        text-align: center;
+    }
+    .about-body-content p{
+        font-size:11px;
+    }
+    blockquote p strong {
+        font-size: 18px;
+        line-height: 0;
+    }
 }
 
 .founder-message {
@@ -8910,13 +8942,16 @@ body:has(.offcanvas) {
     margin: 27px 16px;
     border-radius: 36px;
     color: #000;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 blockquote {
     margin: 0 0 1rem;
     font-size: x-large;
+}
+blockquote p strong{ 
+    font-size: 20px;
 }
 
 .service-entry-list ul li span {
