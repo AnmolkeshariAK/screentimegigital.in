@@ -419,7 +419,7 @@ body {
     }
 
     .section-title h2 {
-        font-size: 19px;
+        font-size: 22px;
         font-weight: 500;
         line-height: 1.25em;
         color: var(--primary-color);
@@ -1466,7 +1466,7 @@ body:has(.offcanvas) {
 /************************************/
 
 .our-services {
-    padding: 100px 0;
+    padding: 90px 0 0;
 }
 
 .our-services-content {
@@ -4022,7 +4022,7 @@ body:has(.offcanvas) {
 
 .page-services {
     position: relative;
-    padding: 160px 0 50px;
+    padding: 0;
 }
 
     .page-services::before {
@@ -7768,7 +7768,7 @@ body:has(.offcanvas) {
         text-align: center;
     }
     .what-we-do {
-        padding: 11px 0;
+        padding: 40px 0;
         text-align: center
     }
 
@@ -7791,7 +7791,7 @@ body:has(.offcanvas) {
     }
 
     .feature-list-item {
-        gap: 14px;
+        gap: 14px; 
     }
 
     .feature-item-content p {
@@ -8039,11 +8039,11 @@ body:has(.offcanvas) {
     }
 
         .service-list-content h3 {
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .service-list-content p {
-            font-size: 14px;
+            font-size: 12px;
         }
 
     .service-readmore-btn {
@@ -8933,6 +8933,19 @@ body:has(.offcanvas) {
     blockquote p strong {
         font-size: 18px;
         line-height: 0;
+    }
+    .page-services {
+        padding: 0 0 10px;
+    }
+
+        .page-services .service-readmore-btn{
+            margin:0
+        }
+        .page-services .service-item .icon-box{
+            display:none
+        }
+    .feature-item-content {
+        text-align: start;
     }
 }
 
