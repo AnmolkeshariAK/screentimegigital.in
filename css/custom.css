@@ -8419,7 +8419,7 @@ body:has(.offcanvas) {
     }
 
     .page-header-box ol li.breadcrumb-item {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .our-approch-image img {
@@ -8545,7 +8545,13 @@ body:has(.offcanvas) {
     }
 
     .service-entry h2 {
-        font-size: 30px;
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    .service-entry p {
+        font-size: 15px;
+        font-weight: 100;
+        margin-bottom: 40px;
     }
 
     .service-entry-list-image {
@@ -8559,11 +8565,16 @@ body:has(.offcanvas) {
 
         .service-entry-list ul li {
             font-size: 14px;
-            padding-left: 20px;
+            padding-left: 30px;
+            font-weight: 100;
+            border-bottom: 1px solid #ffffff1f;
+            padding-bottom: 11px;
         }
 
             .service-entry-list ul li::before {
                 font-size: 14px;
+                top:5px;
+
             }
 
         .service-entry-image img {
@@ -8678,6 +8689,7 @@ body:has(.offcanvas) {
 
     .our-Project-nav ul li a {
         padding: 8px 10px;
+        font-size: 11px;
     }
 
     .project-single-content {
@@ -8947,6 +8959,23 @@ body:has(.offcanvas) {
     .feature-item-content {
         text-align: start;
     }
+    .page-service-single {
+        padding: 50px 0 40px;
+
+    }
+    h2.text-anime-style-2.proccess {
+        margin-block: 17px;
+        margin-top: 54px;
+    }
+    .service-entry-list ul li span {
+        font-weight: 400; 
+    }
+    .our-Project-nav ul {
+        gap: 10px 5px;
+    }
+    .page-project {
+        padding: 20px 0 10px;
+    }
 }
 
 .founder-message {
@@ -8963,13 +8992,14 @@ blockquote {
     margin: 0 0 1rem;
     font-size: x-large;
 }
-blockquote p strong{ 
-    font-size: 20px;
-}
+    blockquote p strong {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
 
 .service-entry-list ul li span {
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 5px 10px 0;
     display: block;
-    font-size: 21px;
+    font-size: 16px;
 }
